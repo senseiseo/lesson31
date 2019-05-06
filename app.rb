@@ -22,6 +22,7 @@ end
 
 get '/about' do 
 	
-	@products = Product.all 
+	@p = Product.find(2)
+  @products = Product.all 
 	erb :about 
 end 
