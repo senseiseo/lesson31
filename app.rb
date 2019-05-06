@@ -11,18 +11,17 @@ class Product < ActiveRecord::Base
 end 
 
 get '/' do
-	
-	erb "Hello! <a href=\"https://github.com/bootstrap-ruby/sinatra-bootstrap\">Original</a> pattern has been modified for <a href=\"http://rubyschool.us/\">Ruby School</a>"			
+	@products = Product.all
+	erb :index
 end
 
 get '/index' do 
 	erb :index 
-	@product = Product.all
+	
 end 
 
 get '/about' do 
 	
-	@p = Product.find(2)
-  @products = Product.all 
+	
 	erb :about 
 end 
