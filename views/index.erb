@@ -7,22 +7,23 @@
     <div>   
         <%=p.title%>   
     </div>
-
-    <div>    
-        <img src="<%=p.path_to_image%>" width="200" height="200" />
+        <div>    
+            <img src="<%=p.path_to_image%>" width="200" height="200" />
+        </div>
+         <div>    
+          <%= p.description %>   
+        </div>
+        <div>    
+          Size :<%= p.size%> cm.
+        </div>
+        <div>    
+           Prise :<%= p.price %> rub.
+        </div>
+        <div>
+            <button class="btn btn-sm btn-success" onclick="add_to_cart()"> Add to cart </button>
+        </div>
     </div>
-
-    <div>    
-        <%= p.description %>   
-    </div>
-    <div>    
-        Size :<%= p.size%> cm.
-    </div>
-    <div>    
-        Prise :<%= p.price %> rub.
-    </div>
-    </div>
-    <%end%>
+<%end%>
 </div>
 <br />
 <br />
