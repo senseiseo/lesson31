@@ -29,3 +29,9 @@ end
 post '/cart' do
 	erb "he;;o" 
 end
+ 
+get '/contacts' do 
+	
+	@products = Product.all
+	erb :contacts
+end

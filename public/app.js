@@ -63,3 +63,9 @@ function cart_get_orders() {
 
     return orders;
 }
+
+function price_add_cart() {
+
+    var price = id + price;
+
+}
